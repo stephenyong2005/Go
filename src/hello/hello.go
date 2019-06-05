@@ -5,6 +5,7 @@ import (
 
 	"stringutil"
 	"strconv"
+	"errors"
 )
 
 type Person struct {
@@ -12,6 +13,7 @@ type Person struct {
 	Age int
 	Address string
 }
+
 
 func main() {
 	fmt.Println(stringutil.Reverse("!oG ,olleH"))
@@ -45,6 +47,8 @@ func main() {
 
 
 
+	res, err := div(2,0)
+	fmt.Println(res,err)
 
 
 }
@@ -53,10 +57,18 @@ func main() {
 // parameter is transmitted as value in Go Lang.
 func (p *Person) AgePlus(n int) int {
 
-
 	p.Age = p.Age + n
 	fmt.Println(p.Age)
 
 	return 0
 
+}
+
+
+func div(a int,b int) (int, error){
+	if b==0{
+		return 0, errors.New("\"division by zero\"")
+	}else{
+		return a/b,nil
+	}
 }
