@@ -49,6 +49,8 @@ func main() {
 
 }
 
+
+// parameter is transmitted as value in Go Lang.
 func (p *Person) AgePlus(n int) int {
 
 
