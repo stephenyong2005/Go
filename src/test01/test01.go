@@ -1,6 +1,8 @@
 package test01
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Person struct {
 	Name string
@@ -11,3 +13,5 @@ type Person struct {
 func PersonPrint(person Person){
 	fmt.Println(person)
 }
+
+
