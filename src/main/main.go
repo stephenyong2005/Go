@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"test01"
 	"strconv"
+	"webDemo"
 )
 
 
@@ -33,6 +34,9 @@ func main() {
 	/*http.HandleFunc("/",webDemo.Handler)
 	log.Fatal(http.ListenAndServe("localhost:8080",nil))
 	*/
+
+	// Testing the variable's visibility in the same package-webDemo
+	webDemo.VariableVisibility()
 }
 
 
