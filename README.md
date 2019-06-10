@@ -1,5 +1,5 @@
-# Go
-This is a self-study projects.
+# Go Project
+This is a self-study projects. 
 
 1. Go projects operates with git commands.
 	(1) 
